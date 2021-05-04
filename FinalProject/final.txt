@@ -8,7 +8,7 @@ For times = 1 to 5 step 1
 
 Display “Player-1 please enter R for Rock, P for Paper, or S for Scissors”
 	Input myHand
-Display Player-2 please enter R for Rock, P for Paper, or S for Scissors”
+Display “Player-2 please enter R for Rock, P for Paper, or S for Scissors”
 	Input yourHand
 If myHand = P
 	If yourHand = P
@@ -38,7 +38,7 @@ End if
 If theWinner = Player-1
 	timeIWon = timeIWon +1
 Else if theWinner = Player-2
-	timeYouWon = timeYouWon +
+	timeYouWon = timeYouWon +1
 End if
 
 Endfor
@@ -55,4 +55,5 @@ End if
 Display finalWinner
 
 STOP
+
 
