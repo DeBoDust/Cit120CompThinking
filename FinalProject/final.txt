@@ -1,53 +1,55 @@
 START
+
 Declaration
 	String myHand, yourHand, theWinner, finalWinner
-Num timeIwon, timeYouWon
+	Num timeIwon, timeYouWon
 
 For times = 1 to 5 step 1
 
-Display “Player-1 please enter R for Rock, P for Paper, or S Scissors”
+Display “Player-1 please enter R for Rock, P for Paper, or S for Scissors”
 	Input myHand
-Display Player-2 please enter R for Rock, P for Paper, or S Scissors”
+Display Player-2 please enter R for Rock, P for Paper, or S for Scissors”
 	Input yourHand
 If myHand = P
 	If yourHand = P
-		theWinner = Tie!
-Else If yourHand = R
-theWinner = Player-1!
-		Else If yourHand = S
-			theWinner = Player-2!
+		theWinner = Tie
+	Else If yourHand = R
+		theWinner = Player-1
+	Else If yourHand = S
+		theWinner = Player-2
 	End if
 Else If myHand = R
 	If yourHand = P
-		theWinner = Player-2!
-Else If yourHand = R
-theWinner = Tie!
-		Else If yourHand = Scissors
-			theWinner = Player-1! 
+		theWinner = Player-2
+	Else If yourHand = R
+		theWinner = Tie
+	Else If yourHand = Scissors
+		theWinner = Player-1 
 	End if
 Else If myHand = S
 	If yourHand = P
-		theWinner = Player-1!
-Else If yourHand = R
-theWinner = Player-2!
-Else If yourHand = S
-			theWinner = Tie!
+		theWinner = Player-1
+	Else If yourHand = R
+		theWinner = Player-2
+	Else If yourHand = S
+		theWinner = Tie
 End if
-If theWinner = Player-1!
+
+If theWinner = Player-1
 	timeIWon = timeIWon +1
-Else if theWinner = Player-2!
-	timeYouWon = timeYouWon +1
+Else if theWinner = Player-2
+	timeYouWon = timeYouWon +
 End if
 
 Endfor
 
-If tiimesIWon == timesYouWon
-finnalWinner = TIE
-Else  
+If timesIWon == timesYouWon
+	finnalWinner = TIE
+Else if  
 	timeIWon > timeYouWon
 		finalWinner = ME
 Else
-finalWinner = YOU
+	finalWinner = YOU
 End if
 
 Display finalWinner
